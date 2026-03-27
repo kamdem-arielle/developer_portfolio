@@ -30,7 +30,7 @@ const experiences = [
 },
 {
   id: 4,
-  date: '2019 — 2012',
+  date: '2019 — 2022',
   title: 'Software Engineer',
   company: 'Telcar Cocoa Ltd',
   description:

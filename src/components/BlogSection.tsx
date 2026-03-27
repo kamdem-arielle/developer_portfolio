@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowUpRightIcon, ArrowRightIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import spaDeploymentContent from '../blog-posts/spa-deployment-aws/content.md?raw';
+import s3CognitoAccessContent from '../blog-posts/s3-finegrained-access-cognito/content.md?raw';
 type Category = 'All' | 'Frontend' | 'DevOps' | 'Cloud' | 'Career';
 
 export interface BlogPost {
@@ -28,6 +29,18 @@ export const blogPosts: BlogPost[] = [
   date: 'Mar 20, 2026',
   category: 'Cloud' as Category,
   readTime: '15 min read',
+  contentType: 'markdown' as const
+},
+{
+  id: 8,
+  slug: 'fine-grained-s3-access-cognito-iam-identity-pools',
+  title: 'Fine-Grained S3 Access per Client Using AWS Cognito, IAM Roles & Identity Pools',
+  excerpt:
+    'How to set up prefix-level S3 access control for multi-tenant applications using Cognito User Pools, Identity Pools, and IAM role mapping.',
+  content: s3CognitoAccessContent,
+  date: 'Mar 27, 2026',
+  category: 'Cloud' as Category,
+  readTime: '12 min read',
   contentType: 'markdown' as const
 },
 {

@@ -4,6 +4,7 @@ import { ArrowUpRightIcon, ArrowRightIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import spaDeploymentContent from '../blog-posts/spa-deployment-aws/content.md?raw';
 import s3CognitoAccessContent from '../blog-posts/s3-finegrained-access-cognito/content.md?raw';
+import angularS3CognitoContent from '../blog-posts/angular-s3-cognito-access/content.md?raw';
 type Category = 'All' | 'Frontend' | 'DevOps' | 'Cloud' | 'Career';
 
 export interface BlogPost {
@@ -20,27 +21,39 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
 {
-  id: 7,
-  slug: 'how-to-deploy-a-spa-on-aws-s3-cloudfront-route53',
-  title: 'How to Deploy a Single Page Application on AWS: S3, CloudFront, Route 53 & CI/CD',
-  excerpt:
-    'A complete, step-by-step guide to deploying your SPA on Amazon S3 with custom domain, HTTPS via CloudFront, and automated GitHub Actions deployments.',
-  content: spaDeploymentContent,
-  date: 'Mar 20, 2026',
-  category: 'Cloud' as Category,
-  readTime: '15 min read',
-  contentType: 'markdown' as const
-},
-{
   id: 8,
   slug: 'fine-grained-s3-access-cognito-iam-identity-pools',
   title: 'Fine-Grained S3 Access per Client Using AWS Cognito, IAM Roles & Identity Pools',
   excerpt:
     'How to set up prefix-level S3 access control for multi-tenant applications using Cognito User Pools, Identity Pools, and IAM role mapping.',
   content: s3CognitoAccessContent,
-  date: 'Mar 27, 2026',
+  date: 'Mar 20, 2024',
   category: 'Cloud' as Category,
   readTime: '12 min read',
+  contentType: 'markdown' as const
+},
+{
+  id: 9,
+  slug: 'angular-s3-cognito-federated-access',
+  title: 'Accessing Isolated S3 Files from an Angular App Using Cognito Federated Credentials',
+  excerpt:
+    'How to use the AWS SDK in an Angular 18 app to authenticate via Cognito, obtain temporary credentials, and fetch S3 files scoped to each tenant\'s prefix.',
+  content: angularS3CognitoContent,
+  date: 'Mar 28, 2024',
+  category: 'Cloud' as Category,
+  readTime: '14 min read',
+  contentType: 'markdown' as const
+},
+{
+  id: 7,
+  slug: 'how-to-deploy-a-spa-on-aws-s3-cloudfront-route53',
+  title: 'How to Deploy a Single Page Application on AWS: S3, CloudFront, Route 53 & CI/CD',
+  excerpt:
+    'A complete, step-by-step guide to deploying your SPA on Amazon S3 with custom domain, HTTPS via CloudFront, and automated GitHub Actions deployments.',
+  content: spaDeploymentContent,
+  date: 'Dec 20, 2023',
+  category: 'Cloud' as Category,
+  readTime: '15 min read',
   contentType: 'markdown' as const
 },
 {

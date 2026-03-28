@@ -31,8 +31,10 @@ We need three key libraries to connect Angular with AWS:
 Install them all at once:
 
 ```bash
-npm install aws-sdk amazon-cognito-identity-js crypto-js
+npm install aws-sdk@^2.1692.0 amazon-cognito-identity-js@^6.3.15 crypto-js@^4.2.0
 ```
+
+> **Version matters.** The versions listed above are the ones used and tested in this project with Angular 18. Different versions of these libraries may have compatibility issues with specific Angular versions, so if you run into unexpected build or runtime errors, double check that your installed versions align with these.
 
 > **Note:** If you encounter a global reference error when running the app (something like `global is not defined`), it's because `amazon-cognito-identity-js` relies on Node.js globals. Add the following line to your `polyfills.ts` file:
 >

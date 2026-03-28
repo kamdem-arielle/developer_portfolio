@@ -209,7 +209,7 @@ export function Sidebar({ activeSection }: SidebarProps) {
 
               <div className="pt-6 mt-6 border-t border-primary-dark/50 flex items-center space-x-6">
                 <a
-                href="https://github.com"
+                href="https://github.com/kamdem-arielle"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate hover:text-accent-pink transition-colors">
@@ -217,7 +217,7 @@ export function Sidebar({ activeSection }: SidebarProps) {
                   <GithubIcon className="w-6 h-6" />
                 </a>
                 <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/arielle-kamdem-17858225a/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate hover:text-accent-pink transition-colors">

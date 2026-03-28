@@ -147,14 +147,14 @@ export function HeroSection() {
           <p className="text-sm text-slate mt-8">
             Find me at{' '}
             <a
-              href="https://github.com"
+              href="https://github.com/kamdem-arielle"
               className="text-accent-pink hover:underline font-medium">
               
               GitHub
             </a>{' '}
             and{' '}
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/arielle-kamdem-17858225a/"
               className="text-accent-pink hover:underline font-medium">
               
               LinkedIn

@@ -7,7 +7,7 @@ Bucket-level permissions won't cut it. You will need something more surgical. In
 By the end, you'll have a fully working identity-based access control system where authenticated users automatically receive temporary AWS credentials scoped to their specific S3 prefix. 
 <!-- — no hardcoded keys, no over-permissioned roles. -->
 
-> **This is Part 1** of a two-part series. In [Part 2: Accessing Isolated S3 Folders from an Angular App Using Cognito Federated Credentials](#), we'll integrate this setup into a frontend Angular application and demonstrate it end to end. Stay tuned.
+> **This is Part 1** of a two-part series. In [Part 2: Accessing Isolated S3 Files from an Angular App Using Cognito Federated Credentials](/blog/angular-s3-cognito-federated-access), we'll integrate this setup into a frontend Angular application and demonstrate it end to end. Stay tuned.
 
 ---
 
@@ -238,6 +238,6 @@ This setup gives you:
 
 ## What's Next
 
-This guide covered the AWS infrastructure side of things. In **Part 2**, [Accessing Isolated S3 Folders from an Angular App Using Cognito Federated Credentials](#), I'll show you how to wire this up in a frontend Angular application.This will include authenticating users, obtaining federated credentials, and listing/downloading files from the correct S3 prefix based on the logged-in user's group.
+This guide covered the AWS infrastructure side of things. In **Part 2**, [Accessing Isolated S3 Files from an Angular App Using Cognito Federated Credentials](/blog/angular-s3-cognito-federated-access), I'll show you how to use the AWS SDK inside an Angular application to authenticate users, obtain federated credentials, and fetch files from the correct S3 prefix based on the logged-in user's group.
 
 If you have questions or run into issues setting this up, feel free to reach out. Happy building!

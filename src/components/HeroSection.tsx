@@ -1,7 +1,25 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowDownIcon } from 'lucide-react';
+
+const statusMessages = [
+  'Open to new projects',
+  'Open to networking',
+  'Open to collaborations',
+  'Open to new experiences',
+];
+
 export function HeroSection() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [spacerIndex, setSpacerIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % statusMessages.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section
       id="hero"
@@ -60,10 +78,32 @@ export function HeroSection() {
             ease: 'easeOut'
           }}>
           
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 border border-primary-dark/30 rounded-full mb-6">
-            <span className="w-2.5 h-2.5 bg-green-500 rounded-full animate-pulse" />
-            <span className="text-sm font-medium text-navy">
-              Open for new projects
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/80 border border-primary-dark/30 rounded-full mb-6">
+            <span className="relative flex h-2.5 w-2.5 shrink-0 ml-0.5">
+              <span
+                className="absolute inset-0 rounded-full bg-green-400 opacity-40"
+                style={{ animation: 'ripple 2.5s ease-out infinite' }}
+              />
+              <span
+                className="absolute inset-0 rounded-full bg-green-400 opacity-40"
+                style={{ animation: 'ripple 2.5s ease-out 1.25s infinite' }}
+              />
+              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-green-500" />
+            </span>
+            <span className="relative h-5 overflow-hidden text-sm font-medium text-navy inline-block transition-all duration-300">
+              <span className="invisible whitespace-nowrap">{statusMessages[spacerIndex]}</span>
+              <AnimatePresence initial={false} mode="wait" onExitComplete={() => setSpacerIndex(currentIndex)}>
+                <motion.span
+                  key={currentIndex}
+                  initial={{ y: '100%', opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  exit={{ y: '-100%', opacity: 0 }}
+                  transition={{ duration: 0.3, ease: 'easeInOut', delay: spacerIndex !== currentIndex ? 0.15 : 0 }}
+                  className="absolute inset-x-0 top-0 whitespace-nowrap text-center"
+                >
+                  {statusMessages[currentIndex]}
+                </motion.span>
+              </AnimatePresence>
             </span>
           </div>
           <p className="text-accent-pink font-medium tracking-wide mb-4">

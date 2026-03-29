@@ -27,7 +27,7 @@ export const blogPosts: BlogPost[] = [
   excerpt:
     'How to set up prefix-level S3 access control for multi-tenant applications using Cognito User Pools, Identity Pools, and IAM role mapping.',
   content: s3CognitoAccessContent,
-  date: 'Mar 20, 2024',
+  date: 'June 20, 2023',
   category: 'Cloud' as Category,
   readTime: '12 min read',
   contentType: 'markdown' as const
@@ -39,7 +39,7 @@ export const blogPosts: BlogPost[] = [
   excerpt:
     'How to use the AWS SDK in an Angular 18 app to authenticate via Cognito, obtain temporary credentials, and fetch S3 files scoped to each tenant\'s prefix.',
   content: angularS3CognitoContent,
-  date: 'Mar 28, 2024',
+  date: 'June 29, 2023',
   category: 'Cloud' as Category,
   readTime: '14 min read',
   contentType: 'markdown' as const

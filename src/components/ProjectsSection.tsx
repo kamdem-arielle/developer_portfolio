@@ -74,7 +74,7 @@ export function ProjectsSection() {
           margin: '-100px'
         }}
         transition={{
-          duration: 0.6
+          duration: 1.0
         }}>
         
         <div className="flex items-center mb-12">
@@ -101,8 +101,8 @@ export function ProjectsSection() {
               margin: '-50px'
             }}
             transition={{
-              duration: 0.5,
-              delay: index * 0.1
+              duration: 0.8,
+              delay: index * 0.15
             }}
             className="group relative bg-white rounded-xl p-6 md:p-8 shadow-sm hover:shadow-warm transition-all duration-300 hover:-translate-y-2 flex flex-col h-full border border-primary-dark/40">
             

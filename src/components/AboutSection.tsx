@@ -40,7 +40,7 @@ export function AboutSection() {
           margin: '-100px'
         }}
         transition={{
-          duration: 0.6
+          duration: 1.0
         }}>
         
         <div className="flex items-center mb-10">

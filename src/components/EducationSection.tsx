@@ -55,7 +55,7 @@ export function EducationSection() {
           margin: '-100px'
         }}
         transition={{
-          duration: 0.6
+          duration: 1.0
         }}>
         
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
@@ -84,8 +84,8 @@ export function EducationSection() {
                 margin: '-50px'
               }}
               transition={{
-                duration: 0.5,
-                delay: index * 0.1
+                duration: 0.8,
+                delay: index * 0.15
               }}
               className={`py-8 ${index !== 0 ? 'border-t border-primary-dark/50' : 'pt-0'}`}>
               

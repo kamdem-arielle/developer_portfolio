@@ -288,7 +288,7 @@ export function HighlightsSection() {
           margin: '-100px'
         }}
         transition={{
-          duration: 0.6
+          duration: 1.0
         }}>
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">

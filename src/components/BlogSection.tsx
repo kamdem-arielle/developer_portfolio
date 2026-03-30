@@ -251,7 +251,7 @@ export function BlogSection({ showAll = false }: BlogSectionProps) {
           margin: '-100px'
         }}
         transition={{
-          duration: 0.6
+          duration: 1.0
         }}>
         
         <div className="mb-12">

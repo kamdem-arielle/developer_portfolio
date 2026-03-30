@@ -57,7 +57,7 @@ export function ExperienceSection() {
           margin: '-100px'
         }}
         transition={{
-          duration: 0.6
+          duration: 1.0
         }}>
         
         <div className="flex items-center mb-12">
@@ -84,8 +84,8 @@ export function ExperienceSection() {
               margin: '-50px'
             }}
             transition={{
-              duration: 0.5,
-              delay: index * 0.1
+              duration: 0.8,
+              delay: index * 0.15
             }}
             className="relative pl-8 md:pl-12 group">
             

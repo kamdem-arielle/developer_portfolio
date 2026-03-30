@@ -161,7 +161,7 @@ CloudFront is AWS's content delivery network. It caches your static files at edg
 
 ### 5.2 — Configure Custom Error Pages for SPA Routing
 
-Since SPAs use client-side routing, direct URL access to routes like `/about` or `/blog/my-post` will return a 404 from S3. To fix this:
+Since SPAs use client-side routing, direct URL access to routes like `/about` will return a 404 from S3. To fix this:
 
 1. In your CloudFront distribution, go to **Error pages**
 2. Create a custom error response:

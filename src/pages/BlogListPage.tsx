@@ -38,7 +38,7 @@ export function BlogListPage() {
           transition={{
             duration: 0.5
           }}
-          className="py-16">
+          className="pt-16 pb-0">
           
           <h1 className="font-heading text-4xl md:text-5xl font-bold text-navy mb-4">
             All Blog Posts

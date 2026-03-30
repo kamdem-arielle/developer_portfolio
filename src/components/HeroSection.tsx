@@ -135,7 +135,7 @@ export function HeroSection() {
           <p className="text-lg md:text-lg text-slate max-w-2xl leading-relaxed mb-10">
             I'm a Full Stack Developer who loves turning complex problems into clean, reliable applications. 
             With 6+ years of experience, I've built production-grade systems across web, cloud, and enterprise environments and I genuinely enjoy every part of the process.
-            When I'm not coding, I'm exploring the outdoors, or hanging out with friends and family.
+            When I'm not coding, I'm exploring the outdoors, watching animes, or hanging out with friends and family.
           </p> 
         </motion.div>
 

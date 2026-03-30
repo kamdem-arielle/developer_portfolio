@@ -40,7 +40,7 @@ export function AboutSection() {
           margin: '-100px'
         }}
         transition={{
-          duration: 0.6
+          duration: 1.0
         }}>
         
         <div className="flex items-center mb-10">
@@ -53,7 +53,7 @@ export function AboutSection() {
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 lg:gap-16">
           <div className="space-y-6 text-slate leading-relaxed text-lg">
             <p>
-              Hey, I'm Arielle, a Full Stack Developer who loves building things that live on the internet. My journey into tech started in 2018, and what began as curiosity quickly turned into a career I'm genuinely passionate about
+              Hey, I'm Arielle, a Full Stack Developer who loves building things that live on the internet. My journey into tech started in 2018, and what began as curiosity quickly turned into a career I'm genuinely passionate about.
             </p>
             <p>
               Fast-forward to today, I've had the privilege of working across startups, corporations, and client engagements in {' '}
@@ -63,7 +63,7 @@ export function AboutSection() {
               . My focus has always been on building reliable, well-crafted applications that solve real problems for real people.
             </p>
             <p>
-              From crafting responsive interfaces to designing cloud infrastructure, automating deployments, and keeping production systems running smoothly and securely, I care about every layer of what I build
+              From crafting responsive interfaces to designing cloud infrastructure, automating deployments, and keeping production systems running smoothly and securely, I care about every layer of what I build.
               {/* Recently, I've discovered a deep passion for the infrastructure
               that powers these applications. I'm currently transitioning my
               career focus toward{' '} */}

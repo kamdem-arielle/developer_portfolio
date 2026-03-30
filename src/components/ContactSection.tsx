@@ -20,7 +20,7 @@ export function ContactSection() {
           once: true
         }}
         transition={{
-          duration: 0.6
+          duration: 1.0
         }}
         className="text-center relative z-10 max-w-2xl mx-auto">
         

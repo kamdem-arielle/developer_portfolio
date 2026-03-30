@@ -74,7 +74,7 @@ export function HeroSection() {
             y: 0
           }}
           transition={{
-            duration: 0.7,
+            duration: 1.2,
             ease: 'easeOut'
           }}>
           
@@ -127,15 +127,15 @@ export function HeroSection() {
             y: 0
           }}
           transition={{
-            duration: 0.7,
-            delay: 0.2,
+            duration: 1.2,
+            delay: 0.3,
             ease: 'easeOut'
           }}>
           
-          <p className="text-lg md:text-xl text-slate max-w-2xl leading-relaxed mb-10">
+          <p className="text-lg md:text-lg text-slate max-w-2xl leading-relaxed mb-10">
             I'm a Full Stack Developer who loves turning complex problems into clean, reliable applications. 
             With 6+ years of experience, I've built production-grade systems across web, cloud, and enterprise environments and I genuinely enjoy every part of the process.
-            When I'm not coding, I'm exploring the outdoors, or hanging out with friends and family.
+            When I'm not coding, I'm exploring the outdoors, watching animes, or hanging out with friends and family.
           </p> 
         </motion.div>
 
@@ -149,8 +149,8 @@ export function HeroSection() {
             y: 0
           }}
           transition={{
-            duration: 0.7,
-            delay: 0.4,
+            duration: 1.2,
+            delay: 0.5,
             ease: 'easeOut'
           }}
           className="flex flex-wrap gap-4">
@@ -179,8 +179,8 @@ export function HeroSection() {
             y: 0
           }}
           transition={{
-            duration: 0.7,
-            delay: 0.6,
+            duration: 1.2,
+            delay: 0.8,
             ease: 'easeOut'
           }}>
           
@@ -188,6 +188,8 @@ export function HeroSection() {
             Find me at{' '}
             <a
               href="https://github.com/kamdem-arielle"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-accent-pink hover:underline font-medium">
               
               GitHub
@@ -195,6 +197,8 @@ export function HeroSection() {
             and{' '}
             <a
               href="https://www.linkedin.com/in/arielle-kamdem-17858225a/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-accent-pink hover:underline font-medium">
               
               LinkedIn

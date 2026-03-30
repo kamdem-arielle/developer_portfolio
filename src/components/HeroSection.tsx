@@ -188,6 +188,8 @@ export function HeroSection() {
             Find me at{' '}
             <a
               href="https://github.com/kamdem-arielle"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-accent-pink hover:underline font-medium">
               
               GitHub
@@ -195,6 +197,8 @@ export function HeroSection() {
             and{' '}
             <a
               href="https://www.linkedin.com/in/arielle-kamdem-17858225a/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-accent-pink hover:underline font-medium">
               
               LinkedIn

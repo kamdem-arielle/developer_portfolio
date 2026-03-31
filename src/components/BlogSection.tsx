@@ -299,25 +299,20 @@ export function BlogSection({ showAll = false }: BlogSectionProps) {
 
         {/* Blog Grid */}
         <motion.div
-          layout
           className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
           
-          <AnimatePresence mode="popLayout">
+          <AnimatePresence mode="wait">
             {displayedPosts.map((post) =>
             <motion.article
               key={post.id}
-              layout
               initial={{
-                opacity: 0,
-                scale: 0.9
+                opacity: 0
               }}
               animate={{
-                opacity: 1,
-                scale: 1
+                opacity: 1
               }}
               exit={{
-                opacity: 0,
-                scale: 0.9
+                opacity: 0
               }}
               transition={{
                 duration: 0.3

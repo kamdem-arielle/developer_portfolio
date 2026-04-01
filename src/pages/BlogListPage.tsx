@@ -6,7 +6,7 @@ import { BlogSection } from '../components/BlogSection';
 import { Footer } from '../components/Footer';
 export function BlogListPage() {
   return (
-    <div className="min-h-screen bg-primary">
+    <div className="min-h-screen bg-primary flex flex-col">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-primary/90 backdrop-blur-md border-b border-primary-dark/50">
         <div className="max-w-6xl mx-auto px-6 md:px-16 py-4 flex items-center justify-between">
@@ -25,7 +25,7 @@ export function BlogListPage() {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-6xl mx-auto px-6 md:px-12">
+      <main className="max-w-6xl mx-auto px-6 md:px-12 w-full flex-grow">
         <motion.div
           initial={{
             opacity: 0,
@@ -50,9 +50,11 @@ export function BlogListPage() {
         </motion.div>
 
         <BlogSection showAll />
-
-        <Footer />
       </main>
+
+      <div className="max-w-6xl mx-auto px-6 md:px-12 w-full">
+        <Footer />
+      </div>
     </div>);
 
 }
